@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  chrome-browser:
+    image: fitrakz/chrome-browser:latest
+    ports:
+      - "9222:9222"
+    network_mode: host
+  firefox-browser:
+    image: fitrakz/firefox-browser:latest
+    ports:
+      - "9223:9222"
+    network_mode: host
